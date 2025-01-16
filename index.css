@@ -1,0 +1,233 @@
+/* General Styles */
+.header-area {
+    background-color: rgb(27, 27, 27);
+    padding: 15px 0;
+  }
+  
+  .header-area .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-area .main-nav .nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header-area .main-nav .nav li {
+    margin-left: 20px;
+  }
+  
+  .header-area .main-nav .nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .header-area .main-nav .nav a.active {
+    font-weight: bold;
+  }
+  
+  .header-area .main-nav .menu-trigger {
+    display: none;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+  }
+  
+  /* Responsive Menu */
+  @media screen and (max-width: 768px) {
+    .header-area .main-nav .nav {
+      display: none;
+      flex-direction: column;
+      background-color: black;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 200px;
+      padding: 10px 0;
+    }
+  
+    .header-area .main-nav .nav.show {
+      display: flex;
+    }
+  
+    .header-area .main-nav .nav li {
+      margin: 10px 0;
+    }
+  
+    .header-area .main-nav .menu-trigger {
+      display: block;
+    }
+  }
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  .main-banner {
+    background-color: black; /* Black block background */
+    padding: 60px 0;
+    color: white; /* White text for contrast */
+  }
+  
+  .main-banner .caption {
+    margin-bottom: 30px;
+  }
+  
+  .main-banner h6 {
+    font-size: 18px;
+    color: #802525; /* Accent color for the heading */
+    margin-bottom: 10px;
+  }
+  
+  .main-banner h2 {
+    font-size: 36px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    color: white; /* Main title color */
+  }
+  
+  .main-banner p {
+    font-size: 16px;
+    color: #d1d1d1; /* Subtle gray for the quote */
+  }
+  
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners for aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .image-container img {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  
+  .image-container .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 15px 20px;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    font-size: 18px;
+  }
+  
+  .image-container:hover img {
+    transform: scale(1.1); /* Zoom effect */
+  }
+  
+  .image-container:hover .hover-text {
+    opacity: 1;
+  }
+  
+
+
+
+  
+  .scrolling-text-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    background-color: rgb(255, 255, 255); /* Adjust based on your design */
+    color: rgb(2, 2, 2); /* Text color */
+    font-size: 18px;
+    padding: 10px 0;
+  }
+  
+  .scrolling-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-text 10s linear infinite;
+  }
+  
+  .scrolling-text span {
+    display: inline-block;
+    margin-right: 50px; /* Add space between repetitions */
+  }
+  
+  @keyframes scroll-text {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .footer
+  {
+    background-color:  rgb(27, 27, 27);
+    padding: 15px 0;
+  }
+  
+
+
+
+
+
+/* Footer Styling */
+.footer-area {
+    background-color: black;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .footer-content p {
+    font-size: 16px;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-links li {
+    display: inline-block;
+  }
+  
+  .social-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links li a:hover {
+    color: #f0a500; /* A pop color for hover effect */
+  }
+  
+
