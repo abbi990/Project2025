@@ -1,4 +1,4 @@
-/* General Styles */
+
 .header-area {
     background-color: rgb(27, 27, 27);
     padding: 15px 0;
@@ -67,9 +67,6 @@
 
 
 
-
-
-
   
   
 
@@ -77,7 +74,7 @@
 
 
   .main-banner {
-    background-color: black; /* Black block background */
+    background-color: rgb(0, 0, 0); /* Black block background */
     padding: 60px 0;
     color: white; /* White text for contrast */
   }
@@ -143,6 +140,9 @@
 
 
 
+
+
+
   
   .scrolling-text-container {
     overflow: hidden;
@@ -180,6 +180,145 @@
     padding: 15px 0;
   }
   
+
+
+
+
+
+
+
+  .participate-section {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .participate-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .participate-items .item {
+    background-color: #fafafa;
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .participate-items .item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+  }
+  
+  .participate-items .icon img {
+    width: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .participate-items h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .participate-items p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cfcfcf;
+  }
+  
+
+
+
+
+
+
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #f0dddd;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #b0a6a6;
+  stroke-width: 2;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #e7c0b1;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
+ 
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -227,7 +366,7 @@
   }
   
   .social-links li a:hover {
-    color: #f0a500; /* A pop color for hover effect */
+    color: #f0a500;
   }
   
 
