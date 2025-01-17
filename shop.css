@@ -106,7 +106,7 @@
 
         .product-card img {
             width: 100%;
-            height: auto;
+            height: 600px;
         }
 
         .product-card:hover {
@@ -127,7 +127,7 @@
 
         .product-card p {
             font-size: 14px;
-            color: #cfcfcf;
+            color:black;
         }
 
         .product-card .btn {
